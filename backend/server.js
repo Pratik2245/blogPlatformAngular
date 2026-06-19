@@ -5,6 +5,7 @@ const cors = require('cors');
 
 const authRoutes = require('./routes/authRoutes');
 const uploadRoutes = require('./routes/uploadRoutes')
+const commentRoutes = require("./routes/commentRoutes")
 const app = express();
 
 app.use(cors());
@@ -23,6 +24,8 @@ app.get("/", (req, res) => {
 });
 app.use("/api/auth", authRoutes);
 app.use("/api/upload", uploadRoutes);
+
+app.use("/api/comments", commentRoutes)
 
 app.listen(process.env.PORT, () => {
     console.log(
