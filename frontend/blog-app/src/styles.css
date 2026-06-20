@@ -1,1 +1,80 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background: #f4f7fc;
+    font-family: "Poppins", sans-serif;
+}
+
+.auth-container {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 450px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.brand {
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.subtitle {
+    color: #6b7280;
+}
+
+.custom-input {
+    height: 50px;
+
+    border-radius: 12px;
+
+    border: 1px solid #d1d5db;
+}
+
+.custom-input:focus {
+    box-shadow: none;
+
+    border-color: #2563eb;
+}
+
+.login-btn,
+.register-btn {
+
+    height: 50px;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    border: none;
+
+    background: #2563eb;
+}
+
+.login-btn:hover,
+.register-btn:hover {
+    transform: translateY(-2px);
+
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
