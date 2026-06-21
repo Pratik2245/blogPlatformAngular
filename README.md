@@ -295,13 +295,3 @@ This project demonstrates:
 * MongoDB Relationships
 * CRUD Operations
 * State Management Concepts
-
----
-
-## Author
-
-Pratik
-
-Upcoming Intern @ PTC India
-
-Full Stack Developer | Angular | Node.js | MongoDB | Express.js
