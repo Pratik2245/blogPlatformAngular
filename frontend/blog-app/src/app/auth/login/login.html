@@ -8,14 +8,14 @@
             </p>
         </div>
 
-        <form>
+        <form (ngSubmit)="login()">
 
             <div class="mb-3">
                 <label class="form-label">
                     Email Address
                 </label>
 
-                <input type="email" class="form-control custom-input" placeholder="Enter your email" />
+                <input type="email" class="form-control" name="email" [(ngModel)]="email" placeholder="Email" />
             </div>
 
             <div class="mb-4">
@@ -23,11 +23,12 @@
                     Password
                 </label>
 
-                <input type="password" class="form-control custom-input" placeholder="Enter your password" />
+                <input type="password" class="form-control" name="password" [(ngModel)]="password"
+                    placeholder="Password" />
             </div>
 
-            <button class="btn login-btn w-100">
-                Sign In
+            <button class="btn btn-success w-100">
+                Login
             </button>
 
         </form>

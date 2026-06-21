@@ -1,23 +1,39 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
   <div class="container">
 
-    <a class="navbar-brand">
+    <a class="navbar-brand fw-bold">
       BlogApp
     </a>
 
-    <div>
+    <div class="d-flex align-items-center">
 
       <a routerLink="/" class="btn btn-outline-light me-2">
         Home
       </a>
 
+      @if(!user){
+
       <a routerLink="/login" class="btn btn-outline-light me-2">
         Login
       </a>
 
-      <a routerLink="/register" class="btn btn-primary">
+      <a routerLink="/register" class="btn btn-primary me-2">
         Register
       </a>
+
+      }
+
+      @if(user){
+
+      <span class="text-white me-3 fw-semibold">
+        Welcome, {{ user.username }}
+      </span>
+
+      <button class="btn btn-danger" (click)="logout()">
+        Logout
+      </button>
+
+      }
 
     </div>
 
